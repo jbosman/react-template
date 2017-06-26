@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './main/main';
+import App from './app';
 
 require('./index.scss');
 
 ReactDOM.render(
-	<Main />,
+	<App />,
 	document.getElementById('app')
 );
 
