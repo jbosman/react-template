@@ -27,8 +27,8 @@ From my perspective, as the developer, it helps to document the design decisions
 ### Webpack settings
 
  
-| Setting  | Value |Notes |
-| ------------- | ------------- |
+| Setting  | Value | Notes |
+| ------------- | ------------- | ------------- |
 | entry  | client/react.index.js | This is where webpack starts digesting files and composing into a single file known as a bundle. Any files required to execute this entry will also be composed into the bundle file.  |
 | output  | dist/bundle.js  | This is the location where webpack will write the bundle file too. |
 | module | <various> | The module section allows for installation of 3rd party modules for compiling files which webpack encouters while composing the bundle file. Later sections will provide more details on the modules used in this project. |
