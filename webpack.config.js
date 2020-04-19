@@ -1,10 +1,12 @@
 const path = require('path');
 
+const distributionDirectory = path.join(__dirname, './dist');
+
 module.exports = {
-	entry: "./browser/react/index.js",
+	entry: 			"./client/react/index.js",
 	output: {
-		path: path.join(__dirname, './public'),
-		filename: "bundle.js"
+		path: 		distributionDirectory,
+		filename: 	"bundle.js"
 	},
 	module: {
 		rules: [

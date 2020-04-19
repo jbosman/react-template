@@ -6,8 +6,8 @@ const app = express();
 const path = require('path');
 
 const ROOT = path.join(__dirname, '../');
-const IndexHTML = path.join(ROOT, 'browser/index.html');
-const PUBLIC = path.join(ROOT, 'public');
+const IndexHTML = path.join(ROOT, 'client/index.html');
+const PUBLIC = path.join(ROOT, 'dist');
 
 app.use(express.static(PUBLIC));
 

@@ -1,6 +1,6 @@
 ### Developer Adds ###
 node_modules
-public/bundle.js
+dist/bundle.js
 package-lock.json
 
 ### Generated Generic Ignores ###
