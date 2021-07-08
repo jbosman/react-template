@@ -9,12 +9,18 @@ From a high level it is a simple server that serves a single html file with a bu
 ## Getting Started
 You must have Node and NPM installed.
 
-Download the contents of the repo and execute the following commands.
+Execute the following command to install all dependencies.
 
 ```
 npm install
-npm run build dev
 ```
+
+Execute the following command to create a development build and launch the express server.
+
+```
+npm run dev
+```
+
 
 Then open your browser and navigate to 'localhost:3000'.
 

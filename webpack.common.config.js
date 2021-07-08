@@ -1,6 +1,6 @@
 const path = require('path');
 
-const distributionDirectory = path.join(__dirname, './dist');
+const distributionDirectory = path.resolve( __dirname, './dist' );
 
 module.exports = {
 	entry: 			"./client/react/index.js",
@@ -12,7 +12,7 @@ module.exports = {
 		rules: [
 			{
 				exclude: /(node_modules)/,
-				test: /\.scss$/,
+				test: /\.css$/,
 				loaders: ["style-loader", "css-loader", "sass-loader"]
 			},
 			{
@@ -26,5 +26,10 @@ module.exports = {
 				loader: "url-loader"
 			}
 		]
+	},
+	resolve: {
+		alias: {
+			'@components': path.resolve( __dirname, 'client/react/components' )
+		}
 	}
 }

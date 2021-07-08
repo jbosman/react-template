@@ -5,16 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "webpack --progress --colors -w & nodemon server/index.js",
+    "dev": "webpack --config webpack.development.config.js --progress --colors -w & nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Joe Bosman",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.3",
-    "nodemon": "^1.11.0",
-    "path": "^0.12.7",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -23,14 +22,12 @@
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "eslint": "^4.5.0",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-react": "^7.3.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
+    "css-loader": "^5.2.6",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.9",
+    "sass-loader": "^10.0.0",
     "style-loader": "^0.18.2",
-    "url-loader": "^0.5.8",
+    "url-loader": "^4.1.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   }
