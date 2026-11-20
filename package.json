@@ -4,31 +4,13 @@
   "description": "Template for building React applications.",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "webpack --config webpack.development.config.js --progress --colors -w & nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Joe Bosman",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "lodash": "^4.17.21",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^5.2.6",
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.9",
-    "sass-loader": "^10.0.0",
-    "style-loader": "^0.18.2",
-    "url-loader": "^4.1.1",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
   }
 }
