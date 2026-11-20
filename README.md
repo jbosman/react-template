@@ -32,7 +32,9 @@ From my perspective, as the developer, it helps to document the design decisions
 
 ### Prettier
 
-Code formatter. I highly recommend installing the VS Code Prettier extension and set it up to only run when it detects a Prettier config file and run when files are saved.
+Prettier is an opinionated code formatter. It removes all original styling* and ensures that all outputted code conforms to a consistent style
+
+I highly recommend installing the VS Code Prettier extension and set it up to only run when it detects a Prettier config file and run when files are saved.
 
 To do that:
 
@@ -49,12 +51,31 @@ To do that:
 
 Located in the '.prettierrc' file. The default configuration from prettier is used. This is specified with the empty object in the file.
 
+### ESLint
+
+ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+
+This is direction from the [ESLint getting started guide](https://eslint.org/docs/latest/use/getting-started): I recommend using the following command if setting up a new project and walking through the command line options to get setup:
+
+```
+npm init @eslint/config@latest
+```
+
+There is also a VS Code extension for ESLint that I recommend installing.
+
+To run the linter, run the following command:
+
+```
+npm run lint
+```
+
 ## Packages
 
 This section provides a high level overview of the packages used to build this template react application.
 
-| Package                          | Description         | Notes                                                   |
-| -------------------------------- | ------------------- | ------------------------------------------------------- |
-| [Vite](https://vite.dev/)        | Build tool          | Frontend build tool for bundling.                       |
-| [React](https://react.dev/) v19  | Frontend UI Library | Frontend UI library.                                    |
-| [Prettier](https://prettier.io/) | Code Formatter      | Formats code consistently for anyone using the project. |
+| Package                                                      | Description         | Notes                                                   |
+| ------------------------------------------------------------ | ------------------- | ------------------------------------------------------- |
+| [Vite](https://vite.dev/)                                    | Build tool          | Frontend build tool for bundling.                       |
+| [React](https://react.dev/) v19                              | Frontend UI Library | Frontend UI library.                                    |
+| [Prettier](https://prettier.io/)                             | Code Formatter      | Formats code consistently for anyone using the project. |
+| [ESLint](https://eslint.org/docs/latest/use/getting-started) | Linter              | Linters help identify potential bugs.                   |
