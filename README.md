@@ -71,11 +71,14 @@ npm run lint
 
 ## Packages
 
-This section provides a high level overview of the packages used to build this template react application.
+This section provides a high level overview of the packages used to build this react template application.
 
-| Package                                                      | Description         | Notes                                                   |
-| ------------------------------------------------------------ | ------------------- | ------------------------------------------------------- |
-| [Vite](https://vite.dev/)                                    | Build tool          | Frontend build tool for bundling.                       |
-| [React](https://react.dev/) v19                              | Frontend UI Library | Frontend UI library.                                    |
-| [Prettier](https://prettier.io/)                             | Code Formatter      | Formats code consistently for anyone using the project. |
-| [ESLint](https://eslint.org/docs/latest/use/getting-started) | Linter              | Linters help identify potential bugs.                   |
+| Package                                                                                 | Description                         | Notes                                                                                          |
+| --------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [Vite](https://vite.dev/)                                                               | Build tool                          | Frontend build tool for bundling.                                                              |
+| [React](https://react.dev/) v19                                                         | Frontend UI Library                 | Frontend UI library.                                                                           |
+| [Prettier](https://prettier.io/)                                                        | Code Formatter                      | Formats code consistently for anyone using the project.                                        |
+| [ESLint](https://eslint.org/docs/latest/use/getting-started)                            | Linter                              | Linters help identify potential bugs via static analysis.                                      |
+| [vitest](https://vitest.dev/guide/)                                                     | Testing Framework                   | Testing framework created by Vite.                                                             |
+| [@vitest/browser-playwright](https://vitest.dev/config/browser/playwright)              | Playwright with ViTest              | Component and Integration Testing in browsers.                                                 |
+| [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/) | Lightweight React Component Testing | The project uses [happy-dom](https://www.npmjs.com/package/happy-dom) as the headless browser. |

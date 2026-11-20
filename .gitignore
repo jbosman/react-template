@@ -1,5 +1,6 @@
 ### Developer Adds ###
 node_modules
+coverage
 dist/bundle.js
 package-lock.json
 
