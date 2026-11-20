@@ -1,10 +1,12 @@
-import reactDOM from "react-dom/client";
+import { useState } from "react";
 
-function App() {
-  return <h1>Hello, React!</h1>;
+export default function App() {
+  const [count, setCount] = useState(0);
+  return (
+    <>
+      <h1>Hello, React</h1>
+      <h2>Counter: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>Increment Counter</button>
+    </>
+  );
 }
-
-const container = document.getElementById("root");
-const root = reactDOM.createRoot(container);
-
-root.render(<App />);
