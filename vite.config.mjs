@@ -1,15 +1,17 @@
 import { defineConfig } from "vite";
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import babel from "@rolldown/plugin-babel";
 import { playwright } from "@vitest/browser-playwright";
 
 // Adjust to match your display resolution
-const SCREEN_WIDTH = 3440; // window.screen.width
-const SCREEN_HEIGHT = 1440; // window.screen.height
+const SCREEN_WIDTH = 3440; // Look for window.screen.width in your browser
+const SCREEN_HEIGHT = 1440; // Look for window.screen.height in your browser
 const WINDOW_WIDTH = Math.floor(SCREEN_WIDTH / 2);
 
 export default defineConfig({
   plugins: [
+    tanstackRouter({ target: "react", autoCodeSplitting: true }),
     react(),
     babel({
       presets: [reactCompilerPreset()],

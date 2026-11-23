@@ -1,7 +1,7 @@
 import { render, cleanup } from "vitest-browser-react";
 import { expect, test, afterEach } from "vitest";
 
-import Counter from "../../Counter";
+import Counter from "../../components/Counter";
 
 afterEach(cleanup);
 
