@@ -15,6 +15,14 @@ export default function Header() {
             </Link>
           </li>
           <li>
+            <Link
+              to="/modalExample"
+              className={`${styles.link} ${styles.active}`}
+            >
+              Modal Example
+            </Link>
+          </li>
+          <li>
             <Link href="/about" className={styles.link}>
               About
             </Link>

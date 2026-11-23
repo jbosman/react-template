@@ -76,9 +76,12 @@ select {
 }
 
 button {
-  background: #777;
+  background: var(--color-primary);
   border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
   cursor: pointer;
+  color: inherit;
 }
 
 p,
